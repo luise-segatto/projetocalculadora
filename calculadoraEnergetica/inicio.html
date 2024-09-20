@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bem-vindo ao Projeto Calculadora Energética</title>
+    <div class="blob">
+    <style>
+       body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom, #ffffff, #5693b6, #303092);
+  margin: 0;
+  min-height: 100vh; /* Ocupar a tela inteira */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+        .container {
+            text-align: center;
+            background-color: #49555c;
+            padding: 60px 40px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #4169E1; /* Azul Royal */
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 15px 10px;
+            padding: 12px 25px;
+            background-color: #4169E1; /* Azul Royal */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #3652a3;
+            transform: scale(1.05);
+        }
+        /* From Uiverse.io by dylanharriscameron */ 
+        
+    .card {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      border-radius: 14px;
+      z-index: 111;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    }
+
+    .blob {
+      position: absolute;
+      z-index: 0; /* Mantém o blob atrás */
+      top: 80%;
+      left: 50%;
+      width: 410px;
+      height: 300px;
+      border-radius: 50%;
+      background-color: #224185;
+      opacity: 1;
+      filter: blur(12px);
+      animation: blob-bounce 5s infinite ease;
+    }
+
+    @keyframes blob-bounce {
+      0% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+      }
+      25% {
+        transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+      }
+      50% {
+        transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+      }
+      75% {
+        transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+      }
+      100% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 40px 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body></div>
+  <div class="card">
+     <!-- O blob deve vir antes no HTML -->
+    <h1>Projeto Calculadora Energética</h1>
+    <p>Aluna: Luise de Castro Gabriel Segatto</p>
+    <p>Professora: Ana Paula</p>
+    <a href="casa.html" class="btn">Casas</a>
+    <a href="calculadora.html" class="btn">Calculadora Energética</a>
+    <a href="index.html" class="btn">Admin - Gerenciar</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+ 
+body {
+   
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background: linear-gradient(to bottom, #ffffff, #5693b6, #303092);
+        margin: 0;
+        min-height: 100vh; /* Ocupar a tela inteira */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+}
+ 
+header {
+    width: 100%;
+    margin: 0;
+}
+ 
+header p {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: #714144;
+    padding: 10px 0;
+}
+ 
+.navbar {
+    background-color: #714144;
+}
+ 
+.navbar-brand img {
+    width: auto;
+    height: 90px;
+}
+ 
+.nav-link {
+    color: rgb(0, 0, 0) !important;
+    font-family: "Inter", sans-serif !important;
+    font-weight: 300 !important;
+    justify-content: space-between;
+    width: 100%;
+}
+ 
+.navbar-toggler {
+    border-color: white;
+}
+ 
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 768px) {
+    header p {
+        font-size: 24px;
+    }
+    .container-sobre {
+        flex-direction: column;
+        margin: 50px;
+    }
+    .texto-sobre {
+        margin-left: 0;
+        text-align: center;
+    }
+    .imagem-sobre img {
+        position: static;
+    }
+    .imagem-sobre {
+        margin-bottom: 20px;
+        height: auto;
+        width: auto;
+    }
+}
+ 
+@media (max-width: 480px) {
+    header p {
+        font-size: 20px;
+    }
+    .gallery-row, .themes-row, .palette-row, .buques-row, .gallery-row-buques, .gallery-row-paleta, .gallery-row-roupas, .gallery-row-temas {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery-image, .themes-image, .palette-image, .buques-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Responsividade da seção "sobre" */
+.container-sobre {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    margin: 100px;
+}
+
+.imagem-sobre {
+    position: relative;
+    width: 250px;
+    height: 590px;
+    background-color: #5D2B2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* Outros ajustes de responsividade */
+.gallery-row, .themes-row, .palette-row, .buques-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Centralização de texto em dispositivos menores */
+.texto-sobre {
+    max-width: 100%;
+    margin-left: 20px;
+}
+
+.gallery-image, .themes-image, .palette-image, .buques-image {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+h1 {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    margin-top: 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #004080;
+}
+
+#add-aparelho-btn {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    margin: 10px auto;
+    display: block;
+}
+
+#calcular-btn {
+    width: 120px;
+    margin: 10px auto;
+    display: block;
+}
+
+.aparelho-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Estilos para bandeiras tarifárias */
+#bandeira {
+    background-color: #e0f7fa;
+    border: 1px solid #00796b;
+}
+
+#bandeira option[value="verde"] {
+    background-color: #36a300;
+}
+
+#bandeira option[value="amarela"] {
+    background-color: #ffe70e;
+}
+
+#bandeira option[value="vermelha-1"] {
+    background-color: #ff5722;
+    color: white;
+}
+
+#bandeira option[value="vermelha-2"] {
+    background-color: #ff0000;
+    color: white;
+}
+
+/* Campo adicional: Custo por kWh */
+#custo-kwh {
+    padding: 10px;
+    font-size: 1rem;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#resultado p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
